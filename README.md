@@ -110,43 +110,22 @@ ReferenceError: errWrong is not defined
 By using named functions we've given additional information to Node which helps it give us a better error message. Notice how Node is able to report the line number where the error occurred `31` and the exact error `ReferenceError: errWrong is not defined`, and it also reports the exact function that contains the error `at writeFile3`.
 
 
-## Unnest method declarations
+## Method declarations
 
+
+### Nested method declarations
 > The original of this approach is from Trevor Norris. You can view his original slides at [http://trevnorris.github.io/NodeDay/#/13](http://trevnorris.github.io/NodeDay/#/13).
 
 ```bash
-function Cat(name) {
-    this.getName = function () {
-        return name;
-    };
-    this.setName = function (n) {
-        name = n;
-    };
-}
-
-var meows = new Cat('meows');
-
-console.log(meows.getName());
+node method-declarations-nested.js
 ```
 
 > Instantiates in 280 ns (that's nano seconds).
 
+### Unnested method declarations
+
 ```bash
-function Cat(name) {
-    this._name = name;
-}
-
-PrototypeColor.prototype.getName = function () {
-    return this._name;
-};
-
-PrototypeColor.prototype.setName = function (n) {
-    this._name = n;
-};
-
-var meows = new Cat('meows');
-
-console.log(meows.getName());
+node method-declarations-unnested.js
 ```
 
 > Instantiates in 7 ns (that's nano seconds).
