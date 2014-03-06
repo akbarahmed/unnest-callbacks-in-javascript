@@ -1,0 +1,28 @@
+{
+  "name": "unnest-callbacks-in-javascript",
+  "version": "0.0.0",
+  "description": "Example code on how to unnest callbacks for readability and performance improvements",
+  "main": "concat-files-nested.js",
+  "dependencies": {
+    "async": "^0.2.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/akbarahmed/unnest-callbacks-in-javascript.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "async",
+    "callbacks"
+  ],
+  "author": "Akbar S. Ahmed <akbar@exponential.io> (http://www.exponential.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/akbarahmed/unnest-callbacks-in-javascript/issues"
+  },
+  "homepage": "https://github.com/akbarahmed/unnest-callbacks-in-javascript"
+}
